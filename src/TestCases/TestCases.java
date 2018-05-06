@@ -64,7 +64,7 @@ public class TestCases extends BaseProgram{
 	
 	}
 	
-	//@AfterTest
+	@AfterTest
 	public void tearDown() {
 		closeBrowser(driver);
 		}

@@ -29,7 +29,7 @@ public class Lexus350Main {
 	 WebElement CREDIT_SCORE;
 	 
 	@FindBy(id="send-my-offer")
-	WebElement SENDMYOFFER_BUTTON;
+	WebElement READYTOSEND_BUTTON;
 
 	
 	public Lexus350Main(WebDriver driver) {
@@ -71,7 +71,7 @@ public class Lexus350Main {
 	}
 
 	public void clickOnSendMyOffer(WebDriver driver) {
-		SENDMYOFFER_BUTTON.click();
+		READYTOSEND_BUTTON.click();
 	}
 	
 	

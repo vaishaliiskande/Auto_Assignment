@@ -2,7 +2,13 @@
   
 <suite name="Cox_Auto_Assignment" verbose="1" >
 
-
+<test name="Test_Cases_in_Chrome" >
+  <parameter name="BrowserType"  value="chrome"/>
+      <classes>
+       <class name="TestCases.TestCases" />
+    </classes>
+  </test>
+ 
   
    <test name="Test_Cases_in_Firefox" >
   <parameter name="BrowserType"  value="firefox"/>

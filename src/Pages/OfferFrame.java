@@ -41,7 +41,7 @@ public class OfferFrame {
 	WebElement MESSAGE;
 	
 	@FindBy (xpath=".//*[@class='btn btn-primary']")
-	WebElement SENDMYOFFER;
+	WebElement SENDMYOFFER_BUTTON;
 	
 	public OfferFrame(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -73,7 +73,10 @@ public class OfferFrame {
 	}
 
 	public void clickSendMyOffer(WebDriver driver) {
-		SENDMYOFFER.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", SENDMYOFFER_BUTTON);
+		
+		SENDMYOFFER_BUTTON.click();
 		System.out.println("User Offer has been sent");
 	}
 	

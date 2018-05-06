@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Cox_Auto_Assignment">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -120,6 +120,25 @@
                       <br/>
                     </div> <!-- method-list-content skipped suite-Cox_Auto_Assignment -->
                   </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Cox_Auto_Assignment" class="hide-methods passed suite-Cox_Auto_Assignment"> (hide)</a> <!-- hide-methods passed suite-Cox_Auto_Assignment -->
+                      <a href="#" panel-name="suite-Cox_Auto_Assignment" class="show-methods passed suite-Cox_Auto_Assignment"> (show)</a> <!-- show-methods passed suite-Cox_Auto_Assignment -->
+                    </span>
+                    <div class="method-list-content passed suite-Cox_Auto_Assignment">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cox_Auto_Assignment" title="TestCases.TestCases" hash-for-method="TestCase1(chrome)">TestCase1(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cox_Auto_Assignment" title="TestCases.TestCases" hash-for-method="TestCase2">TestCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Cox_Auto_Assignment -->
+                  </li>
                 </ul>
               </div> <!-- suite-section-content -->
             </div> <!-- result-section -->
@@ -143,13 +162,13 @@
                   <span class="method-name">TestCase1</span>
                   <span class="parameters">(firefox)</span>
                   <div class="stack-trace"><b>"java.lang.AssertionError: Down Payment Value doesn&apos;t match with the Actual entered Value expected [true] but found [false]
-	at Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:68)
+	at Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:67)
 	at TestCases.TestCases.TestCase1(TestCases.java:41)
 ... Removed 27 stack frames<br/> java.lang.AssertionError: Down Payment Value doesn&apos;t match with the Actual entered Value expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:68)
+	at Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:67)
 	at TestCases.TestCases.TestCase1(TestCases.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -175,7 +194,7 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:68)<br>TestCases.TestCases.TestCase1(TestCases.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:67)<br>TestCases.TestCases.TestCase1(TestCases.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
 </div> <!-- stack-trace -->
                   <em>
 (This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer)                  </em>
@@ -200,6 +219,33 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Cox_Auto_Assignment-class-skipped -->
+          <div class="suite-Cox_Auto_Assignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.TestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase1(chrome)">
+                  </a> <!-- TestCase1(chrome) -->
+                  <span class="method-name">TestCase1</span>
+                  <span class="parameters">(chrome)</span>
+                  <em>
+(This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase2">
+                  </a> <!-- TestCase2 -->
+                  <span class="method-name">TestCase2</span>
+                  <em>
+(This test case verify if the User offer is successfully sent and 'Protect your Vehicle' page is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cox_Auto_Assignment-class-passed -->
         </div> <!-- panel Cox_Auto_Assignment -->
         <div panel-name="test-xml-Cox_Auto_Assignment" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -210,6 +256,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Cox_Auto_Assignment&quot;&gt;
+  &lt;test name=&quot;Test_Cases_in_Chrome&quot;&gt;
+    &lt;parameter name=&quot;BrowserType&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.TestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test_Cases_in_Chrome --&gt;
   &lt;test name=&quot;Test_Cases_in_Firefox&quot;&gt;
     &lt;parameter name=&quot;BrowserType&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
@@ -226,6 +278,9 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
+              <li>
+                <span class="test-name">Test_Cases_in_Chrome (1 class)</span>
+              </li>
               <li>
                 <span class="test-name">Test_Cases_in_Firefox (1 class)</span>
               </li>
@@ -253,20 +308,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestCase1')
 data.setCell(0, 2, 'TestCases.TestCases')
-data.setCell(0, 3, 32510);
+data.setCell(0, 3, 35940);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestCase2')
+data.setCell(1, 1, 'TestCase1')
 data.setCell(1, 2, 'TestCases.TestCases')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 29308);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestCase2')
+data.setCell(2, 2, 'TestCases.TestCases')
+data.setCell(2, 3, 5030);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestCase2')
+data.setCell(3, 2, 'TestCases.TestCases')
+data.setCell(3, 3, 0);
 window.suiteTableData['Cox_Auto_Assignment']= { tableData: data, tableDiv: 'times-div-Cox_Auto_Assignment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Cox_Auto_Assignment">
               </div> <!-- times-div-Cox_Auto_Assignment -->
             </div> <!-- times-div -->
@@ -294,11 +357,27 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">TestCase1(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase2</span>
+                <span class="method-start">29319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34351 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestCase1(firefox)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">36014 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">71958 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
