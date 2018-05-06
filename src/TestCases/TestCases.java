@@ -30,8 +30,8 @@ public class TestCases extends BaseProgram{
 		setUp(BType);
 		
 		//Fill the form for Offer Price
+		
 		Lexus350MainAction.fillOfferForm(driver);
-					
 		//Once the Offer is ready to send, Fill the user details on "Ready to Send" page.
 		OfferFrameAction.fillUserDetails(driver);
 		
@@ -64,7 +64,7 @@ public class TestCases extends BaseProgram{
 	
 	}
 	
-	@AfterTest
+	//@AfterTest
 	public void tearDown() {
 		closeBrowser(driver);
 		}

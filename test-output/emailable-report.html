@@ -31,19 +31,30 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">46.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test_Cases_in_Firefox</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">32.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">TestCases.TestCases</td><td><a href="#m1"><b>TestCase1</b>  ("This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer")</a></td><td class="numi">1</td><td>1525552199075</td><td class="numi">38238</td></tr><tr class="passedodd"><td><a href="#m2"><b>TestCase2</b>  ("This test case verify if the User offer is successfully sent and 'Protect your Vehicle' page is displayed")</a></td><td class="numi">1</td><td>1525552237323</td><td class="numi">6269</td></tr>
+<tr><th colspan="4">Test_Cases_in_Firefox &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">TestCases.TestCases</td><td><a href="#m1"><b>TestCase1</b>  ("This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer")</a></td><td class="numi">1</td><td>1525567404395</td><td class="numi">32510</td></tr>
+<tr><th colspan="4">Test_Cases_in_Firefox &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">TestCases.TestCases</td><td><a href="#m2"><b>TestCase2</b>  ("This test case verify if the User offer is successfully sent and 'Protect your Vehicle' page is displayed")</a></td><td class="numi">1</td><td>1525567436918</td><td class="numi">2</td></tr>
 </table>
-<h1>Default test</h1>
+<h1>Test_Cases_in_Firefox</h1>
 <h2 id="m1">TestCases.TestCases:TestCase1</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>chrome</td>
+<tr class="param stripe"><td>firefox</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Down Payment Value doesn&apos;t match with the Actual entered Value expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:68)
+<br/>at TestCases.TestCases.TestCase1(TestCases.java:41)
+<br/>25 lines not shown
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">TestCases.TestCases:TestCase2</h2>

@@ -44,6 +44,10 @@ public class OfferFrameAction {
 
 	public static void sendMyOffer (WebDriver driver)
 	{
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,300)");
+		
 		OfferFrame frameObj = new OfferFrame(driver);
 		frameObj.clickSendMyOffer(driver);
 		

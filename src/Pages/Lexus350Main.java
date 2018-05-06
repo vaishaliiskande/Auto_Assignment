@@ -1,13 +1,18 @@
 package Pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Lexus350Main {
+
+
 
 	/**
 	 * locators and methods for Offer page
@@ -34,16 +39,21 @@ public class Lexus350Main {
 	
 	public void selectOfferPrice(WebDriver driver, String offerPrice) {
 		
-	
-		if(OFFER_PRICE.getAttribute("value") != null) {
+		WebDriverWait wt = new WebDriverWait(driver,20);
+		wt.until(ExpectedConditions.elementToBeClickable(OFFER_PRICE));
+		
+		OFFER_PRICE.click();
 		OFFER_PRICE.clear();
-		}
 		OFFER_PRICE.sendKeys(offerPrice);
 	}
 
 	public void selectCashDown(WebDriver driver, String cashDown) {
 		
-		if (CASH_DOWN.getAttribute("value")!= null) {
+		WebDriverWait wt = new WebDriverWait(driver,20);
+		wt.until(ExpectedConditions.elementToBeClickable(CASH_DOWN));
+		
+	if (CASH_DOWN.getAttribute("value")!= null) {
+		CASH_DOWN.click();
 		CASH_DOWN.clear();
 		}
 		CASH_DOWN.sendKeys(cashDown);
@@ -54,11 +64,13 @@ public class Lexus350Main {
 
 		Select creditDropdown = new Select(CREDIT_SCORE);
 		creditDropdown.selectByValue(CreditScore);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", CREDIT_SCORE);
+			
 
 	}
 
 	public void clickOnSendMyOffer(WebDriver driver) {
-
 		SENDMYOFFER_BUTTON.click();
 	}
 	

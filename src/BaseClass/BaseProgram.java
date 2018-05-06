@@ -30,7 +30,7 @@ public class BaseProgram {
 			}
 			else if (browserType.equalsIgnoreCase("firefox"))
 			{
-				System.setProperty("webdriver.firefox.marionette",
+				System.setProperty("webdriver.gecko.driver",
 						Path + "\\drivers\\geckodriver.exe");
 				
 			driver = new FirefoxDriver();

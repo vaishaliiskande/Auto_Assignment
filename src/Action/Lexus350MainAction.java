@@ -15,7 +15,7 @@ public class Lexus350MainAction {
 	/**
 	 * This is action class for Lexus 350 Main Offer page
 	 * @author Vaishali
-	 * @return 
+	 * @throws InterruptedException 
 	 *
 	 */
 	
@@ -32,7 +32,6 @@ public class Lexus350MainAction {
 	driver.manage().timeouts().pageLoadTimeout(500, TimeUnit.SECONDS);
 	main.selectOfferPrice(driver,"51000");
 	main.selectCreditScore(driver, "tier_2");
-	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	main.selectCashDown(driver, "2500");
 	main.clickOnSendMyOffer(driver);
 	}
