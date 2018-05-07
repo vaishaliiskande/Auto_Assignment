@@ -10,10 +10,9 @@ In order to execute the code below Setup is required.
 5. Chrome Browser (Version 66.0.3359.139 or higher) 
 6. Quantum Firefox Browser (version 59.0.3 (64-bit))
 
-To execute this Program, Please follow below steps:
-1. Download the project from Github in local folder.
-2. Open the downloaded project in Eclipse IDE
-3. Revisit the pom.xml and save changes so that Maven downloads all the jar files.
-4. Once the project is built, run testng.xml using TestNG Suite
-5. Check the results in test-output/Cox_Auto_Assignment. Check 2 reports for 2 Test suites.
-
+To execute this Program, please follow below steps:
+1.	Download the project from Github in local folder.
+2.	Open the downloaded project in Eclipse IDE
+3.	Once the project is open, right click on the project and select Maven, select "Update Project". Select "Force Update of Snapshots/Releases" and click OK. 
+4.	Once the project is built, right click on testng.xml and Run the code using “TestNG Suite”
+5.	Check the results in folder test-output/Cox_Auto_Assignment. Check 2 reports for 2 Test suites in html. Open HTML files in Web browser.
