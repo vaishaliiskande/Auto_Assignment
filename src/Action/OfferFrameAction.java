@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import Pages.OfferFrame;
+
 
 public class OfferFrameAction {
 	
@@ -59,8 +59,8 @@ public class OfferFrameAction {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 200);
 		WebElement city =driver.findElement(By.id("sp_shopper_city"));
-		
 		wait.until(ExpectedConditions.visibilityOf(city));
+		
 		WebElement CashDown = driver.findElement(By.xpath(".//*[@id='downPayment']/span[2]"));
 		
 		//System.out.println("Cash Down : " + CashDown.getText());

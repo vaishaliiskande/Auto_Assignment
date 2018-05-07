@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="4" passed="2">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Cox_Auto_Assignment" duration-ms="85920" started-at="2018-05-06T02:31:34Z" finished-at="2018-05-06T02:33:00Z">
+  <suite name="Cox_Auto_Assignment" duration-ms="39924" started-at="2018-05-07T04:03:02Z" finished-at="2018-05-07T04:03:41Z">
     <groups>
     </groups>
-    <test name="Test_Cases_in_Chrome" duration-ms="35963" started-at="2018-05-06T02:31:34Z" finished-at="2018-05-06T02:32:10Z">
+    <test name="Test_Cases_in_Firefox" duration-ms="39924" started-at="2018-05-07T04:03:02Z" finished-at="2018-05-07T04:03:41Z">
       <class name="TestCases.TestCases">
-        <test-method status="PASS" signature="TestCase1(java.lang.String)[pri:0, instance:TestCases.TestCases@735b5592]" name="TestCase1" duration-ms="29308" started-at="2018-05-05T22:31:34Z" description="This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer" finished-at="2018-05-05T22:32:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:TestCases.TestCases@58651fd0]" name="setUp" is-config="true" duration-ms="20800" started-at="2018-05-07T00:03:02Z" finished-at="2018-05-07T00:03:22Z">
           <params>
             <param index="0">
               <value>
@@ -17,73 +17,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="TestCase2()[pri:0, instance:TestCases.TestCases@735b5592]" name="TestCase2" duration-ms="5030" started-at="2018-05-05T22:32:04Z" description="This test case verify if the User offer is successfully sent and &#039;Protect your Vehicle&#039; page is displayed" depends-on-methods="TestCases.TestCases.TestCase1" finished-at="2018-05-05T22:32:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.TestCases@735b5592]" name="tearDown" is-config="true" duration-ms="1585" started-at="2018-05-05T22:32:09Z" finished-at="2018-05-05T22:32:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.TestCases -->
-    </test> <!-- Test_Cases_in_Chrome -->
-    <test name="Test_Cases_in_Firefox" duration-ms="49888" started-at="2018-05-06T02:32:10Z" finished-at="2018-05-06T02:33:00Z">
-      <class name="TestCases.TestCases">
-        <test-method status="FAIL" signature="TestCase1(java.lang.String)[pri:0, instance:TestCases.TestCases@523884b2]" name="TestCase1" duration-ms="35940" started-at="2018-05-05T22:32:10Z" description="This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer" finished-at="2018-05-05T22:32:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Down Payment Value doesn't match with the Actual entered Value expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Down Payment Value doesn't match with the Actual entered Value expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Action.OfferFrameAction.verifyDownPayment(OfferFrameAction.java:67)
-	at TestCases.TestCases.TestCase1(TestCases.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TestCase1()[pri:0, instance:TestCases.TestCases@58651fd0]" name="TestCase1" duration-ms="11960" started-at="2018-05-07T00:03:22Z" description="This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer" finished-at="2018-05-07T00:03:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-        <test-method status="SKIP" signature="TestCase2()[pri:0, instance:TestCases.TestCases@523884b2]" name="TestCase2" duration-ms="0" started-at="2018-05-05T22:32:46Z" description="This test case verify if the User offer is successfully sent and &#039;Protect your Vehicle&#039; page is displayed" depends-on-methods="TestCases.TestCases.TestCase1" finished-at="2018-05-05T22:32:46Z">
+        <test-method status="PASS" signature="TestCase2()[pri:0, instance:TestCases.TestCases@58651fd0]" name="TestCase2" duration-ms="5819" started-at="2018-05-07T00:03:34Z" description="This test case verify if the User offer is successfully sent and &#039;Protect your Vehicle&#039; page is displayed" depends-on-methods="TestCases.TestCases.TestCase1" finished-at="2018-05-07T00:03:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.TestCases@523884b2]" name="tearDown" is-config="true" duration-ms="13935" started-at="2018-05-05T22:32:46Z" finished-at="2018-05-05T22:33:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.TestCases@58651fd0]" name="tearDown" is-config="true" duration-ms="1311" started-at="2018-05-07T00:03:40Z" finished-at="2018-05-07T00:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

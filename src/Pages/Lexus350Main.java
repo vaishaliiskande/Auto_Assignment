@@ -1,5 +1,7 @@
 package Pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -43,6 +45,7 @@ public class Lexus350Main {
 		wt.until(ExpectedConditions.elementToBeClickable(OFFER_PRICE));
 		
 		OFFER_PRICE.click();
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		OFFER_PRICE.clear();
 		OFFER_PRICE.sendKeys(offerPrice);
 	}
@@ -52,10 +55,9 @@ public class Lexus350Main {
 		WebDriverWait wt = new WebDriverWait(driver,20);
 		wt.until(ExpectedConditions.elementToBeClickable(CASH_DOWN));
 		
-	if (CASH_DOWN.getAttribute("value")!= null) {
 		CASH_DOWN.click();
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		CASH_DOWN.clear();
-		}
 		CASH_DOWN.sendKeys(cashDown);
 	
 	}

@@ -2,13 +2,10 @@ package TestCases;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -17,18 +14,16 @@ import Action.OfferFrameAction;
 import BaseClass.BaseProgram;
 
 
-public class TestCases extends BaseProgram{
+public class TestCases extends BaseClass.BaseProgram{
 	
 	static WebDriver driver;
 	String browserType;
 	
 
-	@Parameters ({"BrowserType"})
+	
 	@Test (priority=1, description = "This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer")
-	public void TestCase1(String BType)
-	{
-		setUp(BType);
-		
+	public void TestCase1()
+	{		
 		//Fill the form for Offer Price
 		
 		Lexus350MainAction.fillOfferForm(driver);
@@ -56,6 +51,8 @@ public class TestCases extends BaseProgram{
 		OfferFrameAction.verifyProtectBrowser(driver);
 	}
 	
+	@BeforeTest 
+	@Parameters ({"BrowserType"})
 	public void setUp(String browserType) {
 		driver = BaseProgram.getDriver(browserType);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

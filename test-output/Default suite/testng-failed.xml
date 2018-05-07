@@ -6,7 +6,9 @@
     <classes>
       <class name="TestCases.TestCases">
         <methods>
-          <include name="TestCase1" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="TestCase1"/>
+          <include name="tearDown"/>
           <include name="TestCase2"/>
         </methods>
       </class> <!-- TestCases.TestCases -->
