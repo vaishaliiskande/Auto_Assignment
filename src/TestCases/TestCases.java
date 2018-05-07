@@ -20,10 +20,11 @@ public class TestCases extends BaseClass.BaseProgram{
 	String browserType;
 	
 
-	
+	@Parameters ({"BrowserType"})
 	@Test (priority=1, description = "This Test Case will verify the User offer has correct Down Payment value and the User form is sent to Dealer")
-	public void TestCase1()
+	public void TestCase1( String BType)
 	{		
+		setUp(BType);
 		//Fill the form for Offer Price
 		
 		Lexus350MainAction.fillOfferForm(driver);
@@ -51,8 +52,7 @@ public class TestCases extends BaseClass.BaseProgram{
 		OfferFrameAction.verifyProtectBrowser(driver);
 	}
 	
-	@BeforeTest 
-	@Parameters ({"BrowserType"})
+	
 	public void setUp(String browserType) {
 		driver = BaseProgram.getDriver(browserType);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
+<suite name="Failed suite [Cox_Auto_Assignment]">
   <parameter name="BrowserType" value="firefox"/>
-  <test name="Default test(failed)">
+  <test name="Test_Cases_in_Firefox(failed)">
+    <parameter name="BrowserType" value="firefox"/>
     <classes>
       <class name="TestCases.TestCases">
         <methods>
-          <include name="setUp"/>
-          <include name="TestCase1"/>
+          <include name="TestCase1" invocation-numbers="0"/>
+          <include name="tearDown"/>
           <include name="tearDown"/>
           <include name="TestCase2"/>
         </methods>
       </class> <!-- TestCases.TestCases -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test_Cases_in_Firefox(failed) -->
+</suite> <!-- Failed suite [Cox_Auto_Assignment] -->
